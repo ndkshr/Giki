@@ -14,4 +14,9 @@
 ### Found an issue?
 - Reach out to me through the github page for giki or raise an issue.
 - (https://github.com/ndkshr/Giki/issues)[https://github.com/ndkshr/Giki/issues]
-- 
+
+### Privacy Policy
+- Giki does not store any kind of user realted data.
+- We do not require any authentication or authorization from your side.
+- Giki is totally free to use.
+- Please do not enter sensitive information into any input forms for ensuring safety.
