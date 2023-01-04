@@ -1,3 +1,5 @@
+![Giki Logo](https://github.com/ndkshr/Giki/blob/main/giki.png?raw=true)
+
 # Giki
 
 ### What is Giki?
