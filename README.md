@@ -1,6 +1,3 @@
-name: Giki
-title: null
-
 ![Giki Logo](https://github.com/ndkshr/Giki/blob/main/giki.png?raw=true)
 
 ### What is Giki?
@@ -17,3 +14,4 @@ title: null
 ### Found an issue?
 - Reach out to me through the github page for giki or raise an issue.
 - (https://github.com/ndkshr/Giki/issues)[https://github.com/ndkshr/Giki/issues]
+- 
