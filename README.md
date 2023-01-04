@@ -1,6 +1,6 @@
-![Giki Logo](https://github.com/ndkshr/Giki/blob/main/giki.png?raw=true)
-
 # Giki
+
+![Giki Logo](https://github.com/ndkshr/Giki/blob/main/giki.png?raw=true)
 
 ### What is Giki?
 - Giki is a lightweight dictionary
