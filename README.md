@@ -1,6 +1,5 @@
----
-title-heading: false
----
+name: Giki
+title: null
 
 ![Giki Logo](https://github.com/ndkshr/Giki/blob/main/giki.png?raw=true)
 
