@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginStart="5dp"
+        android:id="@+id/giki_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/input_field"
+        app:layout_constraintBottom_toBottomOf="@id/input_field"
+        android:src="@drawable/giki_text"
+        android:layout_width="40dp"
+        android:layout_height="0dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/input_field"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:boxBackgroundColor="?attr/colorPrimary"
+        android:layout_width="0dp"
+        app:endIconMode="custom"
+        app:endIconContentDescription="Search"
+        app:endIconDrawable="@drawable/ic_baseline_search_24"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:hint="Define this word..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/giki_logo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="input_field" />
+
+    <View
+        android:alpha="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        android:id="@+id/divider"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_marginTop="5dp"
+        android:id="@+id/tab_viewpager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
